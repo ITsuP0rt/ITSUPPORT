@@ -15,9 +15,9 @@
     "nodemon": "^2.0.16",
     "npm": "^8.5.5"
   },
-  "scripts": {
+  /*"scripts": {
     "start": "nodemon index.js"
-  },
+  },*/
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
