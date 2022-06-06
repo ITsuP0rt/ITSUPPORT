@@ -15,10 +15,8 @@
     "nodemon": "^2.0.16",
     "npm": "^8.5.5"
   },
-  /*"scripts": {
-    "start": "nodemon index.js"
-  },*/
   "scripts": {
+    "start": "nodemon index.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Connect",
