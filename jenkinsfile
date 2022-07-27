@@ -21,7 +21,7 @@ pipeline {
         // 3. Dummy deploy
         // Print a message (only done if the build is stable)
         stage ('Deploy') {
-            when { not { equals expected: 'UNSTABLE
+            when { not { equals expected: 'UNSTABLE', actual: currentBuild.result } }
             steps {
                 echo 'Deploying it gently...'
             }
