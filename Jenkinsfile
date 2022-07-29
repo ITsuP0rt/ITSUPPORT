@@ -11,12 +11,13 @@ pipeline {
         // 2. Check if 'my-code.c' exists, 
         stage ('Build') {
             steps {
-                /*script {
-                    if (fileExists('my-code.c') == false) {
-                        unstable('Code file not found!')
+                script {
+                    if (fileExists('npm') == true) {
+                        //unstable('Code file not found!')
+                        sh 'npm start'
                     }
-                }*/
-                sh 'node --version'
+                }
+                
             }
         }
         // 3. Dummy deploy
