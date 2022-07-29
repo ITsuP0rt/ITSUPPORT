@@ -16,7 +16,7 @@ pipeline {
                         unstable('Code file not found!')
                     }
                 }*/
-                sh 'npm start'
+                sh 'node --version'
             }
         }
         // 3. Dummy deploy
