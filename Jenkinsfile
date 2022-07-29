@@ -12,7 +12,7 @@ pipeline {
         stage ('Build') {
             steps {
                 script {
-                    if (fileExists('npm') == false) {
+                    if (fileExists('npm.cmd') == false) {
                         unstable('Code file not found!')
                         //sh 'npm start'
                     }
