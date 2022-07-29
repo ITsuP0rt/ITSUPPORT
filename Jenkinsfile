@@ -13,8 +13,8 @@ pipeline {
             steps {
                 script {
                     if (fileExists('npm') == true) {
-                        //unstable('Code file not found!')
-                        sh 'npm start'
+                        unstable('Code file not found!')
+                        //sh 'npm start'
                     }
                 }
                 
